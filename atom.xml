@@ -191,11 +191,12 @@
 &lt;li&gt;若同时要指定多个中间件， &lt;code&gt;yield feapder.Request()&lt;/code&gt;  时指定 &lt;code&gt;download_midware=[中间件1,中间件2,...]&lt;/code&gt;  即可&lt;/li&gt;
 &lt;/ul&gt;
 </content>
+        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
         <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/categories/spider/" />
-        <category term="feapder" scheme="https://sunforritual.github.io/yangxs.github.io/categories/spider/feapder/" />
+        <category term="feapder" scheme="https://sunforritual.github.io/yangxs.github.io/categories/feapder/" />
         <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/tags/spider/" />
-        <category term="feapder" scheme="https://sunforritual.github.io/yangxs.github.io/tags/feapder/" />
         <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
+        <category term="feapder" scheme="https://sunforritual.github.io/yangxs.github.io/tags/feapder/" />
         <updated>2024-03-21T02:05:19.732Z</updated>
     </entry>
     <entry>
