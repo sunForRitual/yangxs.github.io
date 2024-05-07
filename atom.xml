@@ -50,8 +50,8 @@
 &lt;p&gt;以上内容都只是并发爬虫的基本实现，如果想要了解更多相关内容建议结合度娘及 chatGPT，特别是协程、线程池和进程池&lt;/p&gt;
 &lt;/div&gt;
 </content>
-        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
         <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/categories/spider/" />
+        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
         <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/tags/spider/" />
         <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
         <updated>2024-04-12T01:27:55.851Z</updated>
@@ -191,8 +191,8 @@
 &lt;li&gt;若同时要指定多个中间件， &lt;code&gt;yield feapder.Request()&lt;/code&gt;  时指定 &lt;code&gt;download_midware=[中间件1,中间件2,...]&lt;/code&gt;  即可&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
         <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/categories/spider/" />
+        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
         <category term="feapder" scheme="https://sunforritual.github.io/yangxs.github.io/categories/feapder/" />
         <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/tags/spider/" />
         <category term="feapder" scheme="https://sunforritual.github.io/yangxs.github.io/tags/feapder/" />
