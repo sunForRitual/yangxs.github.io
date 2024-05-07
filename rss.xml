@@ -21,8 +21,8 @@
             <link>https://sunforritual.github.io/yangxs.github.io/2024/04/12/spider/%E5%B9%B6%E5%8F%91%E7%88%AC%E8%99%AB/</link>
             <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
             <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/categories/spider/" />
-            <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
             <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/tags/spider/" />
+            <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
             <pubDate>Fri, 12 Apr 2024 09:27:55 +0800</pubDate>
             <description><![CDATA[ &lt;h4 id=&#34;前言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h4&gt;
 &lt;p&gt;​		多线程和多进程本身并不自带线程安全或进程安全的保障。这意味着，在没有采取适当控制措施的情况下，很可能会发生多个线程或进程同时访问同一资源的情况，进而引起资源竞争，导致程序的执行结果不符合预期。为了避免这种问题，可以考虑以下两种解决方案：&lt;/p&gt;
@@ -111,9 +111,9 @@
             <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
             <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/categories/spider/" />
             <category term="feapder" scheme="https://sunforritual.github.io/yangxs.github.io/categories/feapder/" />
-            <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
             <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/tags/spider/" />
             <category term="feapder" scheme="https://sunforritual.github.io/yangxs.github.io/tags/feapder/" />
+            <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
             <pubDate>Thu, 21 Mar 2024 10:05:19 +0800</pubDate>
             <description><![CDATA[ &lt;h4 id=&#34;简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h4&gt;
 &lt;p&gt;开发文档：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mZWFwZGVyLmNvbS8jL1JFQURNRQ==&#34;&gt;https://feapder.com/#/README&lt;/span&gt;&lt;/p&gt;
@@ -423,8 +423,8 @@ dr.find_element_by_id(&amp;quot;kw&amp;quot;).send_keys(Keys.SHIFT, Keys.RIGHT *
             <link>https://sunforritual.github.io/yangxs.github.io/2024/03/07/%E8%87%AA%E5%8A%A8%E5%8C%96/pyautogui%E8%87%AA%E5%8A%A8%E5%8C%96/</link>
             <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
             <category term="自动化" scheme="https://sunforritual.github.io/yangxs.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96/" />
-            <category term="PC自动化" scheme="https://sunforritual.github.io/yangxs.github.io/tags/PC%E8%87%AA%E5%8A%A8%E5%8C%96/" />
             <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
+            <category term="PC自动化" scheme="https://sunforritual.github.io/yangxs.github.io/tags/PC%E8%87%AA%E5%8A%A8%E5%8C%96/" />
             <pubDate>Thu, 07 Mar 2024 11:01:52 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;注：pyautogui 只是能够控制鼠标和键盘事件，并不能提取屏幕中的文本信息&lt;/p&gt;
 &lt;h4 id=&#34;依赖安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#依赖安装&#34;&gt;#&lt;/a&gt; 依赖安装&lt;/h4&gt;
