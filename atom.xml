@@ -8,10 +8,124 @@
     <author>
       <name>yangxs</name>
     </author>
-    <updated>2024-04-12T01:27:55.851Z</updated>
+    <updated>2024-05-29T08:26:27.670Z</updated>
     <category term="python" />
     <category term="爬虫" />
     <category term="JS逆向" />
+    <entry>
+        <id>https://sunforritual.github.io/yangxs.github.io/2024/05/29/Android%E9%80%86%E5%90%91/%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/</id>
+        <title>工具安装</title>
+        <link rel="alternate" href="https://sunforritual.github.io/yangxs.github.io/2024/05/29/Android%E9%80%86%E5%90%91/%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85/"/>
+        <content type="html">&lt;h3 id=&#34;简介&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h3&gt;
+&lt;p&gt;​		要对 Android app 进行逆向需要用到的工具，主要分为抓包工具、反编译工具两种。&lt;/p&gt;
+&lt;h3 id=&#34;抓包工具&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#抓包工具&#34;&gt;#&lt;/a&gt; 抓包工具&lt;/h3&gt;
+&lt;p&gt;主要有：&lt;/p&gt;
+&lt;h4 id=&#34;charles&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#charles&#34;&gt;#&lt;/a&gt; Charles&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;官方下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY2hhcmxlc3Byb3h5LmNvbS9kb3dubG9hZC8=&#34;&gt;https://www.charlesproxy.com/download/&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;正版每次启动只能用 30 分钟，然后就会自动关闭。破解方法如下：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;打开网站：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuenp6bW9kZS5jb20vbXl0b29scy9jaGFybGVzLw==&#34;&gt;https://www.zzzmode.com/mytools/charles/&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/sunForRitual/imgCollector/master/jietu/image-20240521112057358.png&#34; alt=&#34;image-20240521112057358&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;然后启动 Charles，点击 Help -&amp;gt; Registered&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;然后把在上述网站中生成的 Name 和 Key 填入两个输入框，最后重启 Charles，若启动界面只有 Loading Preferences 则说明破解成功&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/sunForRitual/imgCollector/master/jietu/image-20240521112326102.png&#34; alt=&#34;image-20240521112326102&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h4 id=&#34;reqable&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#reqable&#34;&gt;#&lt;/a&gt; reqable&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZXFhYmxlLmNvbS9lbi1VUy9kb3dubG9hZA==&#34;&gt;https://reqable.com/en-US/download&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;用来抓手机 app 包的工具，抓 PC 端包也行。颜值在线，且抓包界面更类似于 chrome 浏览器的抓包界面。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h4 id=&#34;app抓包配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#app抓包配置&#34;&gt;#&lt;/a&gt; app 抓包配置&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;抓包工具安装后，默认状态下只能抓 window 的数据包。想要抓 app 的数据包，需要在手机上配置代理，以及将抓包工具的安全证书安装到手机上存放安全证书的系统目录下。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;charles-安全证书配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#charles-安全证书配置&#34;&gt;#&lt;/a&gt; Charles 安全证书配置&lt;/h5&gt;
+&lt;p&gt;需要用到的工具：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;openssl&lt;/code&gt; ，用来查看安全证书的哈希值&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;adb&lt;/code&gt; ，adb 工具这里就不讲下载了，百度有很多，主要用来连接手机并执行相关命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;夜神模拟器/手机&lt;/code&gt; ，模拟器没有要求（安装地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueWVzaGVuLmNvbS8lRUYlQkMlODklRUYlQkMlOEMlRTYlODklOEIlRTYlOUMlQkElRTklOUMlODAlRTglQTYlODFyb290&#34;&gt;https://www.yeshen.com/），手机需要 root&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;openssl安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#openssl安装&#34;&gt;#&lt;/a&gt; openssl 安装&lt;/h6&gt;
+&lt;p&gt;下载地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zbHByb3dlYi5jb20vcHJvZHVjdHMvV2luMzJPcGVuU1NMLmh0bWw=&#34;&gt;https://slproweb.com/products/Win32OpenSSL.html&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;一般下载第二个的 EXE&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/sunForRitual/imgCollector/master/jietu/image-20240521110320062.png&#34; alt=&#34;image-20240521110320062&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装一直暴击 next 就行&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装完成后，需要配置系统环境变量&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/sunForRitual/imgCollector/master/jietu/image-20240521110700286.png&#34; alt=&#34;image-20240521110700286&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/sunForRitual/imgCollector/master/jietu/image-20240521110747629.png&#34; alt=&#34;image-20240521110747629&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;检测是否安装成功&lt;/p&gt;
+&lt;p&gt;运行 &lt;code&gt;openssl version&lt;/code&gt; ，显示版本号则说明安装成功&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/sunForRitual/imgCollector/master/jietu/image-20240521111019539.png&#34; alt=&#34;image-20240521111019539&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;下载安全证书&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载安全证书&#34;&gt;#&lt;/a&gt; 下载安全证书&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;打开 Charles，选择 Help -&amp;gt; SSL Proxying -&amp;gt; Save Charles Root Certificate...，将安全证书保存到桌面并重命名为 certificate.pem&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/sunForRitual/imgCollector/master/jietu/image-20240521112826621.png&#34; alt=&#34;image-20240521112826621&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开 cmd，并 cd 到 C:\Users\xxx\Desktop ，然后执行以下命令&lt;/p&gt;
+&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;figcaption data-lang=&#34;PowerShell&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;openssl x509 &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt;subject_hash_old &lt;span class=&#34;token operator&#34;&gt;-in&lt;/span&gt; certificate&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;pem&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/sunForRitual/imgCollector/master/jietu/image-20240521113538011.png&#34; alt=&#34;image-20240521113538011&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;然后将上面下载的 certificate.pem 文件名改为，上图红框中的内容 +.0，即  &lt;code&gt;7348ddf5.0&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;推送安全证书&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#推送安全证书&#34;&gt;#&lt;/a&gt; 推送安全证书&lt;/h6&gt;
+&lt;p&gt;将安全证书放入模拟器系统路径，这一步需要开启 模拟器的 root 权限，在设置中开启即可；&lt;/p&gt;
+&lt;p&gt;这一步，我们的最终目的就是将 本地的证书文件 &lt;code&gt;7348ddf5.0&lt;/code&gt;  推到模拟器的 &lt;code&gt;/system/etc/security/cacerts&lt;/code&gt;  路径下 ，但是直接推送会报 &lt;code&gt;Read-only file system&lt;/code&gt; ，这表示该文件为只读文件，你没有向里面写入的权限；&lt;/p&gt;
+&lt;p&gt;所以需要先提权，操作如下：&lt;/p&gt;
+&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;figcaption data-lang=&#34;PowerShell&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&gt; adb shell&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# mount -o remount,rw /system &lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# chmod 777 /system/etc/security/cacerts&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;然后就能在 cmd 命令窗口通过以下命令推送了：&lt;/p&gt;
+&lt;figure class=&#34;highlight powershell&#34;&gt;&lt;figcaption data-lang=&#34;PowerShell&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&gt; adb push 7348ddf5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;0 &lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;system/etc/security/cacerts/7348ddf5&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;0&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h6 id=&#34;手机代理配置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#手机代理配置&#34;&gt;#&lt;/a&gt; 手机代理配置&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在 PC 端打开 &lt;code&gt;Charles&lt;/code&gt;  查看 IP 和 Port 端口，打开 Help -&amp;gt; SSL Proxying -&amp;gt; Install Charles Root Certificate on a Mobile Device or Remmote Brower&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/sunForRitual/imgCollector/master/jietu/image-20240529173022826.png&#34; alt=&#34;image-20240529173022826&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/sunForRitual/imgCollector/master/jietu/image-20240529173245794.png&#34; alt=&#34;image-20240529173245794&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开模拟器的 wifi 高级设置，手动添加代理，并填好主机名和端口。如果是实体手机，将手机与 PC 连接同一 wifi，让两者处于同于局域网，然后进行相同的代理配置即可。&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/sunForRitual/imgCollector/master/jietu/image-20240529173639481.png&#34; alt=&#34;image-20240529173639481&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;然后就能通过 Charles 进行抓包了&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;reqable 的安全证书配置，在该软件的菜单栏 证书 -&amp;gt; 安装根证书到 Android 设备 里面有相关教程&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;h3 id=&#34;反编译工具&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#反编译工具&#34;&gt;#&lt;/a&gt; 反编译工具&lt;/h3&gt;
+&lt;p&gt;jadx、ida&lt;/p&gt;
+</content>
+        <category term="Android逆向" scheme="https://sunforritual.github.io/yangxs.github.io/categories/Android%E9%80%86%E5%90%91/" />
+        <category term="Android逆向" scheme="https://sunforritual.github.io/yangxs.github.io/tags/Android%E9%80%86%E5%90%91/" />
+        <updated>2024-05-29T08:26:27.670Z</updated>
+    </entry>
     <entry>
         <id>https://sunforritual.github.io/yangxs.github.io/2024/04/12/spider/%E5%B9%B6%E5%8F%91%E7%88%AC%E8%99%AB/</id>
         <title>并发爬虫</title>
@@ -50,10 +164,10 @@
 &lt;p&gt;以上内容都只是并发爬虫的基本实现，如果想要了解更多相关内容建议结合度娘及 chatGPT，特别是协程、线程池和进程池&lt;/p&gt;
 &lt;/div&gt;
 </content>
-        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
         <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/categories/spider/" />
-        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
+        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
         <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/tags/spider/" />
+        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
         <updated>2024-04-12T01:27:55.851Z</updated>
     </entry>
     <entry>
@@ -191,12 +305,12 @@
 &lt;li&gt;若同时要指定多个中间件， &lt;code&gt;yield feapder.Request()&lt;/code&gt;  时指定 &lt;code&gt;download_midware=[中间件1,中间件2,...]&lt;/code&gt;  即可&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
         <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/categories/spider/" />
+        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
         <category term="feapder" scheme="https://sunforritual.github.io/yangxs.github.io/categories/feapder/" />
-        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
         <category term="spider" scheme="https://sunforritual.github.io/yangxs.github.io/tags/spider/" />
         <category term="feapder" scheme="https://sunforritual.github.io/yangxs.github.io/tags/feapder/" />
+        <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
         <updated>2024-03-21T02:05:19.732Z</updated>
     </entry>
     <entry>
@@ -432,8 +546,8 @@ dr.find_element_by_id(&amp;quot;kw&amp;quot;).send_keys(Keys.SHIFT, Keys.RIGHT *
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;token keyword&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;token builtin&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;:&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token builtin&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;当前坐标：&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    &lt;span class=&#34;token keyword&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;pyautogui&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;position&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
         <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/categories/python/" />
         <category term="自动化" scheme="https://sunforritual.github.io/yangxs.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96/" />
-        <category term="PC自动化" scheme="https://sunforritual.github.io/yangxs.github.io/tags/PC%E8%87%AA%E5%8A%A8%E5%8C%96/" />
         <category term="python" scheme="https://sunforritual.github.io/yangxs.github.io/tags/python/" />
+        <category term="PC自动化" scheme="https://sunforritual.github.io/yangxs.github.io/tags/PC%E8%87%AA%E5%8A%A8%E5%8C%96/" />
         <updated>2024-03-07T03:01:52.449Z</updated>
     </entry>
     <entry>
